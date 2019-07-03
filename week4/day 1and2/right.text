@@ -1,0 +1,5 @@
+SELECT * FROM country 
+RIGHT JOIN state 
+on country.id=state.id
+The RIGHT JOIN keyword returns all rows from the right table in my context state , 
+with the matching rows in the left table that table is country . The result is NULL in the left side when there is no match.

@@ -1,0 +1,5 @@
+SELECT * FROM country 
+left JOIN state 
+on country.id=state.id 
+he LEFT JOIN keyword returns all rows from the left table that is sate , 
+with the matching rows in the right table that table is country in my context. The result is NULL in the right side when there is no match.

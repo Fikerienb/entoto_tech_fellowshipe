@@ -1,0 +1,2 @@
+SELECT * FROM Customer ORDER BY Country DESC 
+list in alpapte from bottm to top(using countray name)

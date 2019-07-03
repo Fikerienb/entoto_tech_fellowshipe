@@ -1,0 +1,2 @@
+SELECT * FROM Customer WHERE City LIKE '%m'
+list out the information that city name end with m

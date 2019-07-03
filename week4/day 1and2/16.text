@@ -1,0 +1,2 @@
+SELECT name AS Customer, name AS cityaddress FROM Customer
+print out name and address as name

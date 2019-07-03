@@ -1,0 +1,4 @@
+SELECT * FROM country 
+INNER JOIN state 
+on country.id=state.id
+The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns in both tables.

@@ -1,0 +1,4 @@
+SELECT * FROM Customer 
+WHERE Country='Ethiopia' 
+AND City='addis ababa'; 
+this code show how to use and when  we need two thing at the same time 

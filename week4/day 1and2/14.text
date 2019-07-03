@@ -1,0 +1,3 @@
+SELECT * FROM Customer 
+WHERE City LIKE 'deb%'
+list informationn that city name beganing in deb

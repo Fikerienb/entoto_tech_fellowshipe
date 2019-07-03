@@ -1,0 +1,4 @@
+SELECT id FROM country 
+UNION SELECT state_name 
+FROM state ORDER BY id
+print out id and state name togather in one column

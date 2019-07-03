@@ -1,0 +1,4 @@
+SELECT * FROM Customer 
+WHERE City='addis ababa' 
+OR City='debremarkose';
+when we need two thing that is not in same manner we need or and print out the informatione in two case

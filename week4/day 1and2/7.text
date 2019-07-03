@@ -1,0 +1,2 @@
+SELECT * FROM Customer WHERE country='Ethiopia' AND (City='addis ababa' OR City='bahirdare') 
+or and and use to display one conditione in two case

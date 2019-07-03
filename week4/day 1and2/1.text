@@ -1,0 +1,2 @@
+ SELECT * FROM Customer
+this code use to select customer table from  database that is named as customer_management

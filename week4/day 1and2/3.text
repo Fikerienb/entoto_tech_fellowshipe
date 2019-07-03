@@ -1,0 +1,3 @@
+SELECT * FROM Customer
+ WHERE city='debremarkose';
+this code select a person who lives in debremarkose and print out all personal information

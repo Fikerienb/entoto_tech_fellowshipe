@@ -1,0 +1,2 @@
+SELECT name,City FROM Customer
+this code also work on selecting name and city from customer table and print out this two columns

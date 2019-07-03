@@ -1,0 +1,5 @@
+UPDATE Customers
+SET ContactName='fikrie', City='dejjne'
+WHERE CustomerName='fikrie'; 
+when inter wrong informatione in our database we can correcte our information using the above code
+
