@@ -1,0 +1,52 @@
+SELECT AVG (ID)FROM `student_list`;
+# IT display the average of id from the table.
+
+SELECT COUNT(ID) FROM student_list;
+#it returns the number of row from the table.
+
+SELECT Name FROM student_list
+ORDER BY ID ASC
+LIMIT 1
+#select the first 1 name by id  from the table.
+
+SELECT Name FROM student_list
+ORDER BY ID DESC
+LIMIT 1
+#select the last 1 name by id  from the table.
+
+SELECT MAX(ID) FROM student_list
+#display the maximum id from the table.
+
+SELECT MIN(ID) FROM student_list
+##display the minimum id from the table.
+ 
+SELECT sum(ID) FROM student_list
+#diaplay the sum of id from the table.
+
+SELECT student_list.Name,COUNT(teacher.school_ID) AS NumberOfteacher FROM teacher
+LEFT JOIN student_list
+ON teacher.school_ID=student_list.ID
+GROUP BY Name
+#counts by name from the table and another table.
+
+SELECT UCASE(Name) FROM student_list
+#convert avalue to cappital letters from the table.
+
+SELECT lCASE(Name) FROM student_list
+#convert avalue to small letters from the table.
+
+SELECT SUBSTRING(Name,'tigist ashine','meseret akalu') AS some_name FROM student_list  
+ORDER BY `some_name`  DESC
+#The equivalent function for SQL Server is SUBSTRING.
+
+SELECT LENGTH(column_name) FROM table_name;
+#display the length og id from the table.
+
+SELECT ROUND(Name,SEX) FROM student_list
+# round a numeric field to the number of decimals specified.
+
+SELECT NOW() FROM student_list
+#display the current system time and date.
+
+SELECT FORMAT(Name,ID) FROM student_list
+#TO display  format how a field is to be displayed.

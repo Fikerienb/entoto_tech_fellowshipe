@@ -1,0 +1,27 @@
+header{
+    background-color: aqua;
+}
+.tg-header{
+    font-size: xx-large;
+    color: blue;
+    background-color: darkkhaki;
+}
+#ab{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32;
+
+}
+footer{
+    background-color: darksalmon;
+
+}
+.nav{
+    justify-content:center;
+      display: flex;
+}
+.nav h1{
+    margin: 20px 40px 20px 40px;
+}
+.pic{
+    border-radius: 100px;
+}

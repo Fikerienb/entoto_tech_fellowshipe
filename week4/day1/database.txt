@@ -1,0 +1,63 @@
+INSERT INTO `student list` (`Name`, `ID`, `Sex`, `Qualification`, `Adress`, `Phone number`, `Email`) 
+VALUES ('Tigist Ashine', '1', '', 'Bsc by Information Technology', 'Adiss Ababa', '', NULL);
+# its for insert the values for all columons attribute without phone number with student list tables.
+
+
+INSERT INTO `student list` (`Name`, `ID`, `Sex`, `Qualification`, `Adress`, `Phone number`, `Email`) 
+VALUES ('Meron Alemu', NULL, 'F', 'Bsc By Enginnering', 'Hawwasa', '0922445566', NULL);
+# insert values with including phone number and null type for email.
+
+SELECT  name, ID FROM `student list` 
+#its for select or display the result of 2 columons name and ID from the table.
+
+SELECT DISTINCT name FROM student_list;
+# its select only unduplicated files or select different values from name columon from student_list tabel.
+
+SELECT  * FROM student_list WHERE Name= 'tamralech yihune';
+# its select duplicated attribute from name columon values  from all the student_list table.
+
+SELECT * FROM student_list WHERE Adress='sululta' AND Qualification='Bsc By Computer scince';
+#display the same result of adress are sululta AND qualification are bsc by computer scince,
+but it must be the both have the same value or both values are true otherwise error.
+
+SELECT * FROM student_list
+WHERE Adress='sululta'
+AND (Name='eman hashim' OR Name='lidya teshome');
+#its for display if both of true display both or the result is true or false display true.
+
+SELECT * FROM student_list
+ORDER BY Name DESC;
+ To sort the records in a descending order
+
+SELECT * FROM `student_list` ORDER BY  Adress ASC, Qualification DESC;
+#selects all student_list from the "student_list" table, 
+sorted ascending by the "adress" and descending by the "qualification" column:
+
+UPDATE student_list set Name='tigist ashine', Adress='hawwasa';
+#to update the columon name and adress from the existing table.
+
+DELETE FROM student_list WHERE Qualification='enginnering';
+#delete the qualifaction enginering from the table.
+
+SELECT * FROM student_list LIMIT 5;
+select the specific limitation from the table.
+
+SELECT * FROM student_list WHERE Name LIKE '%t'; 
+#to select the columon end  letter t from the table.
+
+SELECT * FROM student_list WHERE name  LIKE 'tig%'; 
+# to select the name start from tig from the table
+
+SELECT * FROM `student_list` WHERE Adress like '%aw%';
+ #to display the adress  to the middle value of "aw"from the table.
+
+
+
+SELECT * FROM `student_list` WHERE Adress LIKE 'a_s_m' 
+# select all adress start with a followed by s and m.
+
+SELECT * FROM `student_list` WHERE id BETWEEN 1 AND 5
+# to select the id from 1 to 5 with in the table.
+
+SELECT Name as stud_name from student_list
+# to change columon name to stud_name temrorarly.

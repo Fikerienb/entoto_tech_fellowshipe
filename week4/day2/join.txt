@@ -1,0 +1,23 @@
+INSERT INTO `student` (`stud_name`, `ID`, `adress`, `contact`) VALUES ('tolani', NULL, 'wollega', '0933445566');
+# insert data into the student table.
+
+INSERT INTO `teacher` (`name`, `id`, `city`, `school_ID`) VALUES ('hagos', '9', 'adama', '19');
+# insert data into the teacher table.
+
+SELECT * FROM student INNER JOIN teacher ON student.ID=teacher.school_id
+#to display  the same values from both table student and teacher.
+
+SELECT * FROM student left JOIN teacher ON student.ID=teacher.school_id
+#  to display all left table student value and display mach id to school_id from right table teacher. 
+
+SELECT * FROM student right JOIN teacher ON student.ID=teacher.school_id
+# to display all right values or teacher table and display match id and school_id from student table.
+
+SELECT * FROM student FULL JOIN teacher ON student.ID=teacher.school_id
+to display all values table student and teacher.
+
+
+CREATE TABLE table1 (name TEXT (5) NOT NULL ,
+ID VARCHAR (8) UNIQUE ,
+POSTA INT (9) NULL)
+# first create table table1 and add columon with datatype, length and constriants.
